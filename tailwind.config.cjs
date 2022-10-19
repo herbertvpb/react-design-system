@@ -3,11 +3,11 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     fontSize: {
-      xs: 14,
-      sm: 16,
-      md: 18,
-      lg: 20,
-      xl: 24,
+      'xs': 14,
+      'sm': 16,
+      'md': 18,
+      'lg': 20,
+      'xl': 24,
       '2xl': 32,
     },
     colors: {
@@ -21,6 +21,7 @@ module.exports = {
       'cyan-300': '#9BE1FB',
 
       'black': '#000000',
+      'white': '#FFFFFF',
     },
     extend: {
       fontFamily: {
