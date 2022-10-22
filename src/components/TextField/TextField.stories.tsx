@@ -24,8 +24,8 @@ export default {
 
 export const Default: StoryObj<TextFieldRootProps> = {};
 
-export const Disabled: StoryObj<TextFieldRootProps> = {
+export const WithoutIcon: StoryObj<TextFieldRootProps> = {
   args: {
-    children: <TextField.Input placeholder="Text input placeholder" disabled />,
+    children: <TextField.Input placeholder="Text input without icon" />,
   },
 };

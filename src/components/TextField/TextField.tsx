@@ -10,7 +10,7 @@ const TextFieldRoot = ({ children }: TextFieldRootProps) => {
   return (
     <div
       className={clsx(
-        "flex items-center gap-3 py-4 px-3",
+        "flex items-center gap-3 py-4 px-3 h-12",
         "rounded w-full bg-gray-800",
         "focus-within:ring-2 ring-cyan-300"
       )}
