@@ -1,3 +1,4 @@
+import { Slot } from "@radix-ui/react-slot";
 import { clsx } from "clsx";
 import { InputHTMLAttributes, ReactNode } from "react";
 
@@ -19,7 +20,17 @@ const TextFieldRoot = ({ children }: TextFieldRootProps) => {
   );
 };
 
-// const TextFieldIcon = () => {};
+TextFieldRoot.displayName = 'TextField.Root';
+
+export interface TextFieldIconProps {
+  children: ReactNode;
+}
+
+const TextFieldIcon = ({ children }: TextFieldIconProps) => {
+  return <Slot className="w-6 h-6 text-gray-400">{children}</Slot>;
+};
+
+TextFieldIcon.displayName = 'TextField.Icon';
 
 export interface TextFieldInputProps
   extends InputHTMLAttributes<HTMLInputElement> {}
@@ -33,7 +44,10 @@ const TextFieldInput = (props: TextFieldInputProps) => {
   );
 };
 
+TextFieldInput.displayName = 'TextField.Input';
+
 export const TextField = {
   Root: TextFieldRoot,
   Input: TextFieldInput,
+  Icon: TextFieldIcon,
 };
